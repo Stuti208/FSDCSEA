@@ -1,0 +1,24 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color: blanchedalmond;
+    height:300px;
+    border:2px solid gold;
+    width:300px;
+    margin-top: 100px;
+    margin-left: 200px;
+    padding: 50px;
+}
+
+#box {
+    background-color: brown;
+}
+
+.child1 {
+    background-color: blueviolet;
+    border:1px dotted black;
+    height:100px;
+    width:100px
+}
