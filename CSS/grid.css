@@ -1,0 +1,23 @@
+* {
+   margin: 0;
+}
+
+.container {
+    display:grid;
+    height:400px;
+    border:2px solid red;
+    grid-template-columns:200px 400px auto ;
+    grid-template-rows: 300px 400px 300px;
+}
+
+.row1 {
+    background-color: blue;
+}
+
+.row2 {
+    background-color: rgb(185, 24, 206);
+}
+
+.row3 {
+    background-color: green;
+}

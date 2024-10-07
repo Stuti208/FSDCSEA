@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(238, 215, 184);
+}
+
+.container {
+    height:400px;
+    border:1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.child1,.child2,.child3,.child4 {
+    height:250px;
+    width:200px;
+    border:1px solid red;
+    margin: 20px;
+}
+
+.child1 {
+    background-color: brown;
+    flex-basis: 50%;
+}
+
+.child2 {
+    background-color:aquamarine;
+}
+
+.child3 {
+    background-color:blueviolet;
+}
+
+.child4 {
+    background-color:green;
+}
