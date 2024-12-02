@@ -2,6 +2,7 @@ import React from 'react'
 import Student from './Student';
 import StudentState from './StudentState';
 import logo from './images.png'
+import ImageManipulation from './ImageManipulation';
 
 const App = () => {
   let a = 12;
@@ -38,7 +39,8 @@ const App = () => {
   return (
  
     <div>
-      <StudentState/>
+      {/* <StudentState /> */}
+      <ImageManipulation/>
     </div>
 
     // <div style={mystyle}>
