@@ -1,15 +1,21 @@
-import React from 'react'
-import Student from './Student';
-import StudentState from './StudentState';
-import logo from './images.png'
-import ImageManipulation from './ImageManipulation';
+import React, { useState } from 'react'
+// import Student from './Student';
+// import StudentState from './StudentState';
+// import logo from './images.png'
+// import ImageManipulation from './ImageManipulation';
+import Login from './Login';
+import Registration from './Registration';
+import {BrowserRouter,Routes,Route } from 'react-router-dom'
+import MainLayout from './MainLayout';
 
 const App = () => {
-  let a = 12;
-  const mystyle = {
-    backgroundColor: 'red',
-    color:"cyan"
-  }
+  const [rData, setrData] = useState();
+
+  // let a = 12;
+  // const mystyle = {
+  //   backgroundColor: 'red',
+  //   color:"cyan"
+  // }
 
   // const studentData = [{
   //   college: "ABES Engineering College",
@@ -39,9 +45,27 @@ const App = () => {
   return (
  
     <div>
+      <BrowserRouter>
+        <Routes>
+        <Route path='/' element={<MainLayout/>}>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/registration' element={<Registration />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <div>{ JSON.stringify(rData)}</div> */}
       {/* <StudentState /> */}
-      <ImageManipulation/>
+      {/* <ImageManipulation/> */}
+    {/* <h2>Login Form</h2>
+      <Login loginData={rData } /> */}
+      
+      {/* <br />
+      <h2>Registration Form</h2>
+      <Registration regData={setrData}/> */}
     </div>
+
+    
+
 
     // <div style={mystyle}>
     //   ABES Engineering College
